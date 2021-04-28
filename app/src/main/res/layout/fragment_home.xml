@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="HomeFragmentBinding">
+
+        <variable
+            name="viewModel"
+            type="com.jaydip.mvvmdemo.ui.orderlist.OrderListViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHeader"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        tools:context=".ui.home.HomeFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/frgHomeTvWelcome"
+            style="@style/TextViewMediumLargeBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="@string/str_welcome"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/frgHomeTabsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:actionBarSize"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frgHomeTvWelcome"
+            app:tabBackground="@color/colorHeader"
+            app:tabGravity="fill"
+            android:layout_gravity="center_horizontal"
+            app:tabIndicatorColor="@color/colorTabSelected"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="@dimen/_2sdp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="@dimen/_20sdp"
+            app:tabPaddingStart="@dimen/_20sdp"
+            app:tabSelectedTextColor="@color/colorTabSelected"
+            app:tabTextAppearance="@style/TextTabAp"
+            app:tabTextColor="@color/colorTabUnSelected" />
+
+        <com.jaydip.mvvmdemo.view.CustomViewPager
+            android:id="@+id/frgHomeViewPagerMenu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgHomeTabsMenu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

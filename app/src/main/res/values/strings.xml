@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">MVVMDemo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--Global-->
+    <string name="str_done">Done</string>
+    <string name="str_add_guest">Add Guests</string>
+    <string name="str_camera">Camera</string>
+    <string name="str_gallery">Gallery</string>
+    <string name="str_remove_photo">Remove Photo</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_add_photo">Add Photo</string>
+    <string name="str_exit">Exit</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+    <string name="str_next">Next</string>
+    <string name="str_save">Save</string>
+    <string name="str_discard">Discard</string>
+    <string name="str_apply">Apply</string>
+    <string name="str_add">Add</string>
+    <string name="str_logout_success">Logged out successfully..</string>
+    <string name="alert_exit">Are you sure you want to exit?</string>
+    <string name="enable_gps_msg">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="no_internet_connection"> Your device don\'t have internet connection</string>
+    <string name="no_result_found">No result found</string>
+    <string name="str_welcome_to">Welcome to</string>
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="str_something_went_wrong">Something went wrong</string>
+
+    <!--Location-->
+    <string name="permission_rationale_title">Required Location Permission</string>
+    <string name="permission_rationale_msg">App required location permission to use current address features. Grant them in app settings.</string>
+    <string name="txt_take_me_setting">Take Me To Settings</string>
+
+    <!--Login-->
+    <string name="btn_log_in">SignIn</string>
+    <string name="str_login">Login</string>
+    <string name="str_hello">Hello</string>
+    <string name="str_mobile_number">Mobile No.</string>
+    <string name="email_mobile_number_required">Mobile Number is required</string>
+    <string name="enter_valid_email_id_or_mobile">Enter valid mobile number</string>
+    <string name="enter_otp_sent_on_mobile">Enter OTP sent to </string>
+    <!--Main Screen-->
+    <string name="str_menu_home">Home</string>
+    <string name="str_menu_help">Help</string>
+    <string name="str_menu_profile">Profile</string>
+
+
+    <!--Order List Screen-->
+    <string name="str_no_data_founds">No data found.</string>
+    <string name="str_welcome">Hello %1$s!</string>
+    <string name="str_menu_active">Active</string>
+    <string name="str_menu_completed">Completed</string>
+    <string name="str_order_no">Order #%1$s</string>
+    <string name="str_order_weight">%1$d KGS</string>
+    <string name="str_no_order_founds">No order found</string>
+
+    <!--Profile Screen-->
+    <string name="str_my_profile">My Profile</string>
+
+</resources>

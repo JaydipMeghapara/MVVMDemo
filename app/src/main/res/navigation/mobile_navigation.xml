@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_menu_home">
+
+    <fragment
+        android:id="@+id/nav_menu_home"
+        android:name="com.jaydip.mvvmdemo.ui.home.HomeFragment"
+        android:label="@string/str_menu_home"
+        tools:layout="@layout/fragment_home">
+
+<!--        <action-->
+<!--            android:id="@+id/action_nav_home_to_orderDetailFragment"-->
+<!--            app:destination="@id/nav_orderDetailFragment"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:popUpTo="@id/nav_menu_home">-->
+<!--            <argument-->
+<!--                android:name="arg_is_completed_order"-->
+<!--                android:defaultValue="false"-->
+<!--                app:argType="boolean" />-->
+<!--            <argument-->
+<!--                android:name="arg_order_id"-->
+<!--                android:defaultValue=""-->
+<!--                app:argType="string" />-->
+<!--        </action>-->
+    </fragment>
+    <fragment
+        android:id="@+id/nav_menu_help"
+        android:name="com.jaydip.mvvmdemo.ui.help.HelpFragment"
+        android:label="@string/str_menu_help"
+        tools:layout="@layout/fragment_help">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_menu_profile"
+        android:name="com.jaydip.mvvmdemo.ui.profile.ProfileFragment"
+        android:label="@string/str_menu_profile"
+        tools:layout="@layout/fragment_profile"></fragment>
+
+    <fragment
+        android:id="@+id/nav_orderListFragment"
+        android:name="com.jaydip.mvvmdemo.ui.orderlist.OrderListFragment"
+        android:label="@string/str_menu_home"
+        tools:layout="@layout/fragment_home_order_list">
+
+    </fragment>
+
+</navigation>

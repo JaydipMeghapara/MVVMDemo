@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ProfileFragmentBinding">
+
+        <variable
+            name="viewModel"
+            type="com.jaydip.mvvmdemo.ui.profile.ProfileViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frgProfileClHeader"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/colorHeader"
+            android:elevation="0dp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frgProfileTvHeader"
+                style="@style/TextViewMediumLargeBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/str_my_profile"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorHeader"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frgProfileClHeader">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:nestedScrollingEnabled="true"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/frgProfileClContain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/frgScheduleAppointmentTvNoOutlet"
+                        style="@style/TextViewMediumBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/str_menu_profile"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/frgProfileBtnStartEndDay"-->
+<!--                        style="@style/MyRoundedThemeButton"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_15sdp"-->
+<!--                        android:elevation="0dp"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:paddingStart="@dimen/_10sdp"-->
+<!--                        android:paddingTop="@dimen/_8sdp"-->
+<!--                        android:paddingEnd="@dimen/_10sdp"-->
+<!--                        android:paddingBottom="@dimen/_8sdp"-->
+<!--                        android:text="@string/str_start_day"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/colorAppTheme"-->
+<!--                        android:textSize="@dimen/_12ssp"-->
+<!--                        app:layout_constraintEnd_toStartOf="@+id/frgProfileBtnOnlineOffline"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:strokeColor="@color/colorAppTheme"-->
+<!--                        app:strokeWidth="1dp" />-->
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/frgProfileBtnOnlineOffline"-->
+<!--                        style="@style/MyRoundedThemeButton"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:elevation="0dp"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:paddingStart="@dimen/_10sdp"-->
+<!--                        android:paddingTop="@dimen/_8sdp"-->
+<!--                        android:paddingEnd="@dimen/_10sdp"-->
+<!--                        android:paddingBottom="@dimen/_8sdp"-->
+<!--                        android:text="@string/str_go_offline"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/colorBlackLight"-->
+<!--                        android:textSize="@dimen/_12ssp"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/frgProfileBtnStartEndDay"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:strokeColor="@color/colorBorderGray"-->
+<!--                        app:strokeWidth="1dp" />-->
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

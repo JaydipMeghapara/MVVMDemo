@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <color name="colorPrimary">#179CA1</color>
+    <color name="colorPrimaryDark">#179CA1</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorAppTheme">#179CA1</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorSemiTransparent">#80000000</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorHint">#A4A4A4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDisable">#FBFBFB</color>
+
+    <color name="colorText">#001137</color>
+    <color name="colorTextGray">#4E597D</color>
+    <color name="colorTextBlack">#5C5C5C</color>
+    <color name="colorBtnBg">#1FCBCD</color>
+    <color name="colorBtn">#1fcbcd</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="textHint">#848484</color>
+    <color name="colorCalDay">#757575</color>
+    <color name="textError">#FF0000</color>
+
+    <color name="colorOrangeDisable">#f9bb85</color>
+    <color name="colorWhiteVariation">#FFF9F3</color>
+    <color name="colorLightBrownTv">#F4F7FE</color>
+    <color name="colorDarkBrownHintUnderline">#8892A0</color>
+
+
+    <color name="gray">#808080</color>
+    <color name="colorHeader">#F8FAFA</color>
+    <color name="colorTabSelected">#362a5c</color>
+    <color name="colorTabUnSelected">#717577</color>
+
+    <color name="colorBlueText">#245a8f</color>
+    <color name="colorBlackLight">#262626</color>
+    <color name="colorGrayLight">#5f6264</color>
+    <color name="colorImageBg">#f3f0ff</color>
+    <color name="colorBorderGray">#b5b5b5</color>
+
+</resources>
